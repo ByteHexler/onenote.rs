@@ -39,7 +39,7 @@ pub(crate) fn parse(object: &Object) -> Result<Data> {
             )),
         })
         .transpose()?
-        .unwrap_or_else(|| InkBias::Both);
+        .unwrap_or_else(|| InkBias::Drawing);
         //.ok_or_else(|| {
         //    ErrorKind::MalformedOneNoteFileData("ink stroke node has no ink bias".into())
         //})?;
