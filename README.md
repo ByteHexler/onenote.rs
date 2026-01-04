@@ -8,10 +8,7 @@ modern OneNote apps. Feature contributions are welcome, but otherwise the
 project focuses on bugfixes and compatibility.
 
 In addition to the publicly documented contents, this project also allows
-reading ink/handwriting content. Math/equation content is not supported (due to
-being _very_ undocumented).¹
-
-<sub>¹ If you have reliable documentation or samples, contributions are welcome.</sub>
+reading ink/handwriting content as well as math/equation content.
 
 ## Goals
 
@@ -30,7 +27,7 @@ Add the dependency to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-onenote_parser = "1.0"
+onenote_parser = "1.1"
 ```
 
 ```rust
@@ -54,7 +51,7 @@ is exposed through `std::error::Error::backtrace()`.
 
 ```toml
 [dependencies]
-onenote_parser = { version = "1.0", features = ["backtrace"] }
+onenote_parser = { version = "1.1", features = ["backtrace"] }
 ```
 
 ## Stability
